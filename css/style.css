@@ -1,0 +1,389 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+/* Nav Bar */
+header nav {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 50px;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  align-items: center;
+  z-index: 100;
+}
+
+nav li {
+  font-family: Arial, Helvetica, sans-serif;
+  display: inline-block;
+  padding: 0px 10px 0px 10px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(0, 157, 255);
+}
+
+.navbar .logo a{
+  font-size: 20px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+/* End Nav Bar */
+
+/* Skip to Main Content */
+.skip {
+  position: absolute;
+  top: -100px;
+}
+
+.skip:focus { 
+  position: absolute;
+  top: 6px;
+  z-index: 1;
+  padding:8px;
+}
+
+.dayinlife {
+  width: 50%;
+  height: auto;
+  margin: 0 auto;
+}
+
+.welcome{
+  background: linear-gradient(rgba(0.7, 0.7, 0.7, 0.7), rgba(0.7, 0.7, 0.7, 0.7)), url('../images/banner-1.jpg') center/cover fixed;
+  justify-content: flex-start;
+  align-items: flex-end;
+  z-index: 2;
+}
+
+.welcome-img {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  grid-gap: 20px; 
+  justify-items: center;
+  align-items: center; 
+  margin: 50px auto; 
+  max-width: 800px;
+  z-index: 1;
+}
+
+body {
+  background-color: #EAF7FD;
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.5;
+  color: #022333;
+  padding-top: 50px;
+}
+
+.welcome-img img {
+  filter: grayscale(75%);
+}
+.welcome-img img:hover {
+  filter: grayscale(0%);
+  width: 100%;
+  height: 100%;
+}
+.welcome:focus {
+  border-radius:15px;
+  border: 10px #DBAD4A dotted;
+  filter: grayscale(0%)
+}
+/* End Skip to Main Content
+
+/* Footer */
+.icons {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-evenly;
+  font-size: 35px;
+}
+.socials a {
+  color: black;
+}
+.socials a:hover {
+  color:rgb(0, 157, 255);
+}
+/* End Footer*/
+
+/*About Header*/
+/* header */
+.header-content-about{
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/leslie.jpg') center/cover fixed;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+#header .container{
+  width: 100%;
+}
+.header-content-about{
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+.header-content-about h1{
+  font-size: 4.5rem;
+  margin-bottom: 0;
+  text-transform: uppercase;
+  color: white;
+}
+ /*about portrait*/
+ .about-content{
+  align-items: start;
+  grid-gap: 30px;
+}
+
+.musictext {
+  font-size: 25px;
+}
+
+.aboutaaron, .soccerword {
+  text-align: center;
+}
+
+.about-portrait {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.about-portrait img {
+  width: 230px;
+}
+
+.aboutaaron {
+  font-size: 30px;
+  font-weight: 800;
+}
+
+.about-soccer, .about-friends {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+.highlightreel {
+  text-align: center;
+}
+.videos {
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: center;
+  padding: 20px;
+  gap: 50px;
+}
+
+/*Interests Page*/
+.title-word {
+  animation: color-animation 4s linear infinite;
+}
+
+.title-word-1 {
+  --color-1: rgb(15, 134, 72);
+  --color-2: #16769f;
+  --color-3: #631581;
+  font-size: 200%;
+}
+
+@keyframes color-animation {
+  0%    {color: var(--color-1)}
+  32%   {color: var(--color-1)}
+  33%   {color: var(--color-2)}
+  65%   {color: var(--color-2)}
+  66%   {color: var(--color-3)}
+  99%   {color: var(--color-3)}
+  100%  {color: var(--color-1)}
+}
+.realmadriddetail {
+  font-weight: 150;
+}
+
+.realmadrid2022 {
+  display: flex;
+  justify-content: center;
+}
+
+.playergallery {
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.playergallery img {
+  display: inline-block;
+  margin: 10px;
+}
+
+.santiago {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 50px;
+  gap: 50px;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+.playergallery img, .santiago img {
+  width: 200px;
+}
+.musicinterests{
+  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url('../images/steinway.jpg') center/cover fixed;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: white;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+.musicinterestsTwo{
+  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url('../images/miller.jpg') center/cover fixed;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: white;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+}
+.musicinterestsThree{
+  background: linear-gradient(rgba(0,0,0, 0.3), rgba(0,0,0,0.3)), url('../images/joji.jpg') center/cover fixed;
+  justify-content: flex-start;
+  align-items: flex-end;
+  color: white;
+  padding-top: 50rem;
+  padding-bottom: 20rem;
+}
+
+
+/*media queries*/
+@media(max-width: 400px) {
+  .header-content {
+    padding-top: 30px;
+  }
+  .videos iframe,
+  .videos img {
+    width: 300px;
+    height: auto;
+  }
+}
+@media(min-width: 500px) {
+  .navbar .logo a{
+    font-size: 15px;
+    font-weight: 900;
+    text-decoration: none;
+  }
+  nav li {
+    padding: 0px 40px 0px 40px;
+  }
+  .navbar li {
+    font-size: 13px;
+  }
+   /*about portrait*/
+ .about-content{
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  align-items: start;
+  }
+  .header-content-about {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)), url('../images/leslie.jpg') center/cover;
+    background-size: cover;
+    background-position: center top;
+    background-attachment: fixed;
+  }
+
+  .header-content-about{
+    padding-top: 30rem;
+    padding-bottom: 30rem;
+  }
+  
+  .about-portrait {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .about-portrait img {
+    width: 230px;
+  }
+  .about-details {
+    font-size: 15px;
+  }
+}
+
+@media(min-width: 800px) {
+  .navbar .logo a{
+    font-size: 30px;
+    font-weight: 1000;
+    text-decoration: none;
+  }
+  nav li {
+    padding: 0px 60px 0px 60px;
+  }
+  .navbar li {
+    font-size: 30px;
+  }
+
+  .header-content {
+    padding-top: 50px;
+  }
+
+  .title {
+    padding-top: 30px;
+  }
+
+  .videos {
+    background-color: rgb(191, 205, 226);
+    display: flex; 
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    padding: 75px;
+  }
+
+  .about-soccer img {
+    width: 500px;
+  }
+
+  .about-portrait img {
+    width: 500px;
+  }
+
+  .about-right, .about-details {
+    font-size: 25px;
+  }
+  .welcome{
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .welcome-img img:hover {
+    filter: grayscale(0%);
+    width: 110%;
+    height: 110%;
+  }
+  .playergallery img, .santiago img {
+    width: 500px;
+  }
+  .music {
+    font-size: 30px;
+  }
+}
+
+@media screen and (prefers-reduced-motion: reduce){
+  .colorchange{
+    animation: none;
+  }
+}
+
+
